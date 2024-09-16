@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/background_color">
+
+
+
+    <ImageView
+        android:id="@+id/pizzaImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/margarita"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:elevation="4dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/pizzaName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pizza Name"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_text" />
+
+        <ImageButton
+            android:id="@+id/backToMenuButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/menu"
+            android:background="?attr/selectableItemBackgroundBorderless"
+             />
+        <ImageButton
+            android:id="@+id/favoriteButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/heartempty"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+        <ImageButton
+            android:id="@+id/orderButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/order"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pizzaDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textColor="@color/secondary_text"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sizes:"
+        android:textStyle="bold"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/sizeSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Small - $8.99"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/sizeMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medium - $10.99"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/sizeLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Large - $12.99"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

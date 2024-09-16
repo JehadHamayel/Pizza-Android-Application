@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home_logo"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_pizza_menu"
+            android:icon="@drawable/pizza_svgrepo_com"
+            android:title="@string/menu_Pizza_menu" />
+        <item
+            android:id="@+id/nav_your_orders"
+            android:icon="@drawable/shipped_svgrepo_com"
+            android:title="@string/Your_orders" />
+        <item
+            android:id="@+id/nav_your_favorites"
+            android:icon="@drawable/favourite_svgrepo_com"
+            android:title="@string/Your_favorites" />
+        <item
+            android:id="@+id/nav_special_offers"
+            android:icon="@drawable/special_offer"
+            android:title="@string/Special_Offers" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile_round_1342_svgrepo_com"
+            android:title="@string/Profile" />
+        <item
+            android:id="@+id/nav_call_us_or_find_us"
+            android:icon="@drawable/call_medicine_svgrepo_com"
+            android:title="@string/Call_us_or_Find_us" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_2_svgrepo_com"
+            android:title="@string/Logout" />
+
+
+
+    </group>
+</menu>

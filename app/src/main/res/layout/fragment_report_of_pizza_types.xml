@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/reportOfPizzaTypesFragment"
+    tools:context=".view_all_orders.reportOfPizzaTypes">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/goBackButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#C04121"
+            android:text="Go Back"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:icon="@android:drawable/ic_menu_revert"
+            app:iconGravity="textStart"
+            app:iconPadding="15dp"
+            app:iconSize="25dp"
+            app:iconTint="#FFFFFF" />
+        <TextView
+            android:id="@+id/totalIncomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="total income for all types: 0.0$"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="10dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reportOfPizzaTypesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_admin_profile"
+            android:icon="@drawable/admin_with_cogwheels_svgrepo_com"
+            android:title="@string/Admin_Profile"/>
+        <item
+            android:id="@+id/nav_add_admin"
+            android:icon="@drawable/admin_1_svgrepo_com"
+            android:title="@string/Add_Admin" />
+        <item
+            android:id="@+id/nav_view_all_orders"
+            android:icon="@drawable/all_orders"
+            android:title="@string/View_All_Orders" />
+        <item
+            android:id="@+id/nav_add_special_offers"
+            android:icon="@drawable/add_square_svgrepo_com"
+            android:title="@string/Add_Special_Offers" />
+        <item
+            android:id="@+id/nav_logout_admin"
+            android:icon="@drawable/logout_2_svgrepo_com"
+            android:title="@string/Logout" />
+
+    </group>
+</menu>

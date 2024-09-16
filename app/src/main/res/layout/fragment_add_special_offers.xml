@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_special_offers.AddSpecialOffersFragment">
+
+    <TextView
+        android:id="@+id/endD"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="End Offer Date"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startD" />
+
+    <TextView
+        android:id="@+id/newP"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="New Total Price"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previousPrice" />
+
+    <Spinner
+        android:id="@+id/categorySpinner"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="84dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/catgTitle"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/catgTitle"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="84dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Category"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nameTitle"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:text="Pizza Type"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/categorySpinner"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catgTitle" />
+
+    <Spinner
+        android:id="@+id/nameSpinner"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorySpinner" />
+
+    <TextView
+        android:id="@+id/sizeTitle"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:text="Pizza Size"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@+id/nameSpinner"
+        app:layout_constraintHorizontal_bias="0.297"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTitle" />
+
+    <Spinner
+        android:id="@+id/sizeSpinner"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/previousPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/sizeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/nameSpinner"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/newPrice"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="New Price"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#676767"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/newP"
+        app:layout_constraintTop_toBottomOf="@+id/previousPrice" />
+
+    <TextView
+        android:id="@+id/startD"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Start Offer Date"
+        android:textAlignment="center"
+        android:textSize="15sp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newP" />
+
+    <EditText
+        android:id="@+id/startDateField"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:focusable="false"
+        android:hint="Select Date"
+        android:inputType="none"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#676767"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/startD"
+        app:layout_constraintTop_toBottomOf="@+id/newPrice" />
+
+    <EditText
+        android:id="@+id/endDateField"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:focusable="false"
+        android:hint="Select Date"
+        android:inputType="none"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#676767"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/endD"
+        app:layout_constraintTop_toBottomOf="@+id/startDateField" />
+
+    <Button
+        android:id="@+id/makeOfferBtn"
+        android:layout_width="328dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#C04121"
+        android:text="Make the offer"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:icon="@android:drawable/btn_star_big_on"
+        app:iconPadding="0dp"
+        app:iconTint="#FFF4BB"
+        app:iconTintMode="multiply"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:iconSize="30dp" />
+
+    <TextView
+        android:id="@+id/previousPrice"
+        android:layout_width="264dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:text="Total Previous Price: 0"
+        android:textAlignment="center"
+        android:textColor="#C30000"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sizeTitle"
+        tools:ignore="TextSizeCheck"
+        tools:textSize="15dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/style_orders"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+    <ImageView
+        android:id="@+id/pizzaImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        />
+    <ImageView
+        android:id="@+id/specialImage"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/offer"
+        />
+</FrameLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp"
+      >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+
+                >
+                <TextView
+                    android:id="@+id/pizzaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza Name"
+                    android:layout_marginBottom="10dp"
+                    android:textAppearance="?attr/textAppearanceListItem" />
+
+                <TextView
+                    android:id="@+id/pizzaCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza Category"
+                    android:textAppearance="?attr/textAppearanceListItemSecondary"
+                    />
+                <TextView
+                    android:id="@+id/pizzaSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pizza Size"
+                    android:layout_marginBottom="10dp"
+                    android:textAppearance="?attr/textAppearanceListItemSecondary"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/oldPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Old Price"
+                android:layout_weight="1"
+                android:paddingBottom="10dp"
+                android:textAppearance="?attr/textAppearanceListItemSecondary"
+                />
+            <TextView
+                android:id="@+id/newPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="New Price"
+
+                android:textAppearance="?attr/textAppearanceListItemSecondary"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/favoriteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/heartempty" />
+    <ImageButton
+        android:id="@+id/orderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/order" />
+</LinearLayout>

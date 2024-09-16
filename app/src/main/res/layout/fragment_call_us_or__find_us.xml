@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#434343"
+    android:padding="16dp"
+    tools:backgroundTint="#434343">
+
+
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:src="@drawable/drop_down_arrow_for_call"
+        app:layout_constraintBottom_toTopOf="@+id/buttons_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.159" />
+
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="46dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/drop_down_arrow_for_call"
+        app:layout_constraintBottom_toTopOf="@+id/buttons_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="323dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corners_for_call_us"
+        android:filterTouchesWhenObscured="false"
+        android:fitsSystemWindows="false"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Header Icon -->
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="72dp"
+            android:background="#61FFFFFF"
+            android:fontFamily="casual"
+            android:padding="8dp"
+            android:text="Contact Profile"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="280dp"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="242dp"
+            android:fontFamily="cursive"
+            android:text="Get In Touch"
+            android:textColor="#FFFFFF"
+            android:textSize="35dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="197dp"
+            android:layout_height="60dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="79dp"
+            android:layout_marginTop="179dp"
+            android:layout_marginEnd="87dp"
+            android:background="#61FFFFFF"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="8dp"
+            android:text="Have any questions? We'd love to hear you."
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:textAlignment="center" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.664">
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="218dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1E69B5"
+            android:padding="8dp"
+            android:text="Call Us"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:icon="@android:drawable/stat_sys_phone_call"
+            app:iconGravity="textStart"
+            app:iconPadding="10dp"
+            app:iconTint="#FFFFFF" />
+
+        <Button
+            android:id="@+id/locationBtn"
+            android:layout_width="226dp"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E42525"
+            android:padding="8dp"
+            android:text="Find Location"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            app:icon="@drawable/ic_location"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="100dp"
+            app:iconTint="#FFFFFF"
+            tools:textAlignment="textStart" />
+
+        <Button
+            android:id="@+id/emailBtn"
+            android:layout_width="226dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="#E67927"
+            android:padding="8dp"
+            android:text="Send Email"
+            android:textColor="#ffffff"
+            app:icon="@android:drawable/ic_dialog_email"
+            app:iconGravity="textStart"
+            app:iconPadding="8dp"
+            app:iconTint="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Italian Pizza</string>
+    <string name="title_activity_main_navigation_page">MainNavigationPage</string>
+    <string name="title_activity_main_navigation_page_for_admin">MainNavigationPageForAdmin</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">user</string>
+    <string name="nav_header_subtitle">user@user.com</string>
+    <string name="nav_header_title_admin">Admin</string>
+    <string name="nav_header_subtitle_admin">admin@admin.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_Pizza_menu">Pizza Menu</string>
+    <string name="Your_orders">Your orders</string>
+    <string name="Your_favorites">Your favorites</string>
+    <string name="Special_Offers"> Special Offers</string>
+    <string name="Profile">Profile</string>
+    <string name="Call_us_or_Find_us">Call us or Find us</string>
+    <string name="Logout">Logout</string>
+    <string name="Admin_Profile">Admin Profile</string>
+    <string name="Add_Admin">Add Admin</string>
+    <string name="View_All_Orders">View All Orders</string>
+    <string name="Add_Special_Offers">Add Special Offers</string>
+    <string name="Logout_Admin">Logout Admin</string>
+
+    <string-array name="Margarita_pizza_sizes">
+        <item name="Margarita Small">Margarita Small</item>
+        <item name="Margarita Medium">Margarita Medium</item>
+        <item name="Margarita Large">Margarita Large</item>
+    </string-array>
+    <string-array name="Neapolitan_pizza_sizes">
+        <item name="Neapolitan Small">Neapolitan Small</item>
+        <item name="Neapolitan Medium">Neapolitan Medium</item>
+        <item name="Neapolitan Large">Neapolitan Large</item>
+    </string-array>
+    <string-array name="Hawaiian_pizza_sizes">
+        <item name="Hawaiian Small">Hawaiian Small</item>
+        <item name="Hawaiian Medium">Hawaiian Medium</item>
+        <item name="Hawaiian Large">Hawaiian Large</item>
+    </string-array>
+    <string-array name="Pepperoni_pizza_sizes">
+        <item name="Pepperoni Small">Pepperoni Small</item>
+        <item name="Pepperoni Medium">Pepperoni Medium</item>
+        <item name="Pepperoni Large">Pepperoni Large</item>
+    </string-array>
+    <string-array name="New_York_Style_pizza_sizes">
+        <item name="New York Style Small">New York Style Small</item>
+        <item name="New York Style Medium">New York Style Medium</item>
+        <item name="New York Style Large">New York Style Large</item>
+    </string-array>
+    <string-array name="Calzone_pizza_sizes">
+        <item name="Calzone Small">Calzone Small</item>
+        <item name="Calzone Medium">Calzone Medium</item>
+        <item name="Calzone Large">Calzone Large</item>
+    </string-array>
+    <string-array name="Tandoori_Chicken_Pizza_pizza_sizes">
+        <item name="Tandoori Chicken Pizza Small">Tandoori Chicken Pizza Small</item>
+        <item name="Tandoori Chicken Pizza Medium">Tandoori Chicken Pizza Medium</item>
+        <item name="Tandoori Chicken Pizza Large">Tandoori Chicken Pizza Large</item>
+    </string-array>
+    <string-array name="BBQ_Chicken_Pizza_pizza_sizes">
+        <item name="BBQ Chicken Pizza Small">BBQ Chicken Pizza Small</item>
+        <item name="BBQ Chicken Pizza Medium">BBQ Chicken Pizza Medium</item>
+        <item name="BBQ Chicken Pizza Large">BBQ Chicken Pizza Large</item>
+    </string-array>
+    <string-array name="Seafood_Pizza_pizza_sizes">
+        <item name="Seafood Pizza Small">Seafood Pizza Small</item>
+        <item name="Seafood Pizza Medium">Seafood Pizza Medium</item>
+        <item name="Seafood Pizza Large">Seafood Pizza Large</item>
+    </string-array>
+    <string-array name="Vegetarian_Pizza_pizza_sizes">
+        <item name="Vegetarian Pizza Small">Vegetarian Pizza Small</item>
+        <item name="Vegetarian Pizza Medium">Vegetarian Pizza Medium</item>
+        <item name="Vegetarian Pizza Large">Vegetarian Pizza Large</item>
+    </string-array>
+    <string-array name="Buffalo_Chicken_Pizza_pizza_sizes">
+        <item name="Buffalo Chicken Pizza Small">Buffalo Chicken Pizza Small</item>
+        <item name="Buffalo Chicken Pizza Medium">Buffalo Chicken Pizza Medium</item>
+        <item name="Buffalo Chicken Pizza Large">Buffalo Chicken Pizza Large</item>
+    </string-array>
+    <string-array name="Mushroom_Truffle_Pizza_pizza_sizes">
+        <item name="Mushroom Truffle Pizza Small">Mushroom Truffle Pizza Small</item>
+        <item name="Mushroom Truffle Pizza Medium">Mushroom Truffle Pizza Medium</item>
+        <item name="Mushroom Truffle Pizza Large">Mushroom Truffle Pizza Large</item>
+    </string-array>
+    <string-array name="Pesto_Chicken_Pizza_pizza_sizes">
+        <item name="Pesto Chicken Pizza Small">Pesto Chicken Pizza Small</item>
+        <item name="Pesto Chicken Pizza Medium">Pesto Chicken Pizza Medium</item>
+        <item name="Pesto Chicken Pizza Large">Pesto Chicken Pizza Large</item>
+    </string-array>
+
+    <string-array name="pizza_names">
+        <item name="Margarita">Margarita</item>
+        <item name="Neapolitan">Neapolitan</item>
+        <item name="Hawaiian">Hawaiian</item>
+        <item name="Pepperoni">Pepperoni</item>
+        <item name="New York Style">New York Style</item>
+        <item name="Calzone">Calzone</item>
+        <item name="Tandoori Chicken Pizza">Tandoori Chicken Pizza</item>
+        <item name="BBQ Chicken Pizza">BBQ Chicken Pizza</item>
+        <item name="Seafood Pizza">Seafood Pizza</item>
+        <item name="Vegetarian Pizza">Vegetarian Pizza</item>
+        <item name="Buffalo Chicken Pizza">Buffalo Chicken Pizza</item>
+        <item name="Mushroom Truffle Pizza">Mushroom Truffle Pizza</item>
+        <item name="Pesto Chicken Pizza">Pesto Chicken Pizza</item>
+
+    </string-array>
+    <string-array name="pizza_sizes">
+        <item name="Small">Small</item>
+        <item name="Medium">Medium</item>
+        <item name="Large">Large</item>
+    </string-array>
+    <string-array name="pizza_categories">
+        <item name="Chicken">Chicken</item>
+        <item name="Beef">Beef</item>
+        <item name="Veggies">Veggies</item>
+        <item name="Others">Others</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="details">Pizza Sizes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

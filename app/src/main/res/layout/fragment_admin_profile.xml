@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signin"
+    tools:context=".admin_profile.AdminProfileFragment">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/admin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/uploadAdminImag"
+        android:layout_width="190dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#DD2C00"
+        android:text="Update my profile picture"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="50px"
+        app:icon="@android:drawable/ic_menu_manage"
+        app:iconSize="20dp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstNameT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="64dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/lastNameT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameT" />
+
+    <TextView
+        android:id="@+id/PhoneNumberT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="0dp"
+        android:text="Phone Number"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailT" />
+
+    <TextView
+        android:id="@+id/GenderT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberT" />
+
+    <TextView
+        android:id="@+id/OldPassT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+
+        android:text="Old Password"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenderT" />
+
+    <TextView
+        android:id="@+id/NewPassT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+
+        android:layout_marginTop="0dp"
+        android:text="New Password"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OldPassT" />
+
+    <TextView
+        android:id="@+id/conNewPassword"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:paddingLeft="20px"
+        android:text="Confirm Password"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewPassT" />
+
+    <TextView
+        android:id="@+id/emailT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="Email"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameT" />
+
+    <EditText
+        android:id="@+id/firstNameE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Enter First Name"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/firstNameT"
+        app:layout_constraintTop_toBottomOf="@+id/uploadAdminImag"
+        android:textColor="#C52700"
+        android:textColorHint="#C4C52700"/>
+
+    <EditText
+        android:id="@+id/lastNameE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edittext_background"
+        android:textColor="#C52700"
+        android:textColorHint="#C4C52700"
+        android:hint="Enter Last Name"
+        android:inputType="text"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lastNameT"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameE" />
+
+    <EditText
+        android:id="@+id/PhoneNumberE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter Your Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#C52700"
+        android:textColorHint="#C4C52700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PhoneNumberT"
+        app:layout_constraintTop_toBottomOf="@+id/emailE"/>
+
+    <TextView
+        android:id="@+id/GenderE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:textColor="#C52700"
+
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/GenderT"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberE" />
+
+    <EditText
+        android:id="@+id/OldPassE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Enter Old Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#C52700"
+        android:textColorHint="#C4C52700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/OldPassT"
+        app:layout_constraintTop_toBottomOf="@+id/GenderE" />
+
+    <EditText
+        android:id="@+id/NewPassE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/NewPassT"
+        app:layout_constraintTop_toBottomOf="@+id/OldPassE"
+        android:textColor="#C52700"
+        android:textColorHint="#C4C52700"/>
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edittext_background"
+        android:hint="  Confirm Your Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/conNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/NewPassE"
+        android:textColor="#C52700"
+        android:textColorHint="#C4C52700"/>
+
+    <TextView
+        android:textColor="#C52700"
+        android:id="@+id/emailE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="2dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/emailT"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameE" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="352dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="3dp"
+        android:backgroundTint="#DD2C00"
+        android:text="Update My Data"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#EA7F13"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="40px"
+        app:icon="@drawable/update_icon"
+        app:iconGravity="textStart"
+        app:iconPadding="15dp"
+        app:iconSize="40dp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="src_atop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conNewPassword"
+        app:strokeColor="#5A1515" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

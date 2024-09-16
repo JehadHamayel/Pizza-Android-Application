@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_call_us_or_find_us"
+        android:name="com.example.finalproject.call_us_or_find_us.Call_us_or_Find_usFragment"
+        android:label="@string/Call_us_or_Find_us"
+        tools:layout="@layout/fragment_call_us_or__find_us" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.finalproject.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_pizza_menu"
+        android:name="com.example.finalproject.pizza_menu.PizzaMenuFragment"
+        android:label="@string/menu_Pizza_menu"
+        tools:layout="@layout/fragment_pizza_menu" />
+    <fragment
+        android:id="@+id/nav_special_offers"
+        android:name="com.example.finalproject.special_offers.SpecialOffersFragment"
+        android:label="@string/Special_Offers"
+        tools:layout="@layout/fragment_special_offers" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.finalproject.profile.ProfileFragment"
+        android:label="@string/Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_your_orders"
+        android:name="com.example.finalproject.your_orders.Your_ordersFragment"
+        android:label="@string/Your_orders"
+        tools:layout="@layout/fragment_your_orders" />
+    <fragment
+        android:id="@+id/nav_your_favorites"
+        android:name="com.example.finalproject.your_favorites.Your_favoritesFragment"
+        android:label="@string/Your_favorites"
+        tools:layout="@layout/fragment_your_favorites" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:label="@string/Logout"
+        />
+
+
+</navigation>

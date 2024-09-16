@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pizza_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pizza_menu.PizzaMenuFragment">
+
+
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style"
+        android:queryHint="Search in all pizzas"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:iconifiedByDefault="false"
+        >
+
+
+    </SearchView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontal_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_view">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/scroll_view">
+
+            <Button
+                android:id="@+id/all_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="All"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+
+                />
+
+            <Button
+                android:id="@+id/chicken_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+
+                android:text="Chicken"
+                android:textColor="#FFFFFF" />
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+
+                />
+            <Button
+                android:id="@+id/beef_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:text="Beef"
+                android:textColor="#FFFFFF"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+
+                />
+            <Button
+                android:id="@+id/veggies_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:text="Vegetarian"
+                android:textColor="#FFFFFF"/>
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+
+                />
+            <Button
+                android:id="@+id/others_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/red"
+                android:text="Others"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="617dp"
+        android:orientation="vertical"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_scroll_view">
+
+        <LinearLayout
+            android:id="@+id/filterSizePrise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/MaxPrice"
+                android:layout_width="191dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/red"
+                android:hint="Max Price" />
+            <Space
+                android:layout_width="10dp"
+                 android:layout_height="0dp"
+                />
+
+            <Spinner
+                android:id="@+id/sizeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/red" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pizzaMenuRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

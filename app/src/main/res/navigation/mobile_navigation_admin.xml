@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation2"
+    app:startDestination="@+id/nav_admin_profile">
+
+    <fragment
+        android:id="@+id/nav_add_special_offers"
+        android:name="com.example.finalproject.add_special_offers.AddSpecialOffersFragment"
+        android:label="@string/Add_Special_Offers"
+        tools:layout="@layout/fragment_add_special_offers" />
+    <fragment
+        android:id="@+id/nav_logout_admin"
+        android:label="@string/Logout_Admin"
+        />
+    <fragment
+        android:id="@+id/nav_admin_profile"
+        android:name="com.example.finalproject.admin_profile.AdminProfileFragment"
+        android:label="@string/Admin_Profile"
+        tools:layout="@layout/fragment_admin_profile" />
+
+    <fragment
+        android:id="@+id/nav_add_admin"
+        android:name="com.example.finalproject.add_admin.AddAdminFragment"
+        android:label="@string/Add_Admin"
+        tools:layout="@layout/fragment_add_admin" />
+
+    <fragment
+        android:id="@+id/nav_view_all_orders"
+        android:name="com.example.finalproject.view_all_orders.ViewAllOrdersFragment"
+        android:label="@string/View_All_Orders"
+        tools:layout="@layout/fragment_view_all_orders" />
+</navigation>

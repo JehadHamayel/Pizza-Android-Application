@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile.ProfileFragment">
+
+    <Button
+        android:id="@+id/updateImageToFirebase"
+        android:layout_width="171dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="108dp"
+        android:backgroundTint="#DD2C00"
+        android:text="Update Your Image"
+        android:textAlignment="textStart"
+        android:textColor="#FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:cornerRadius="50px"
+        app:icon="@android:drawable/ic_menu_manage"
+        app:iconSize="20dp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="src_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="135dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/profile_round_1342_svgrepo_com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/firstNameT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="208dp"
+        android:layout_weight="1"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/firstNameE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="208dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Enter First Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+        android:textColorHint="#CDEA2F00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastNameT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="Last Name"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameT" />
+
+    <EditText
+        android:id="@+id/lastNameE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="150dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter Last Name"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+        android:textColorHint="#CDEA2F00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameE" />
+
+    <TextView
+        android:id="@+id/emailT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="Email"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameT" />
+
+    <TextView
+        android:id="@+id/PhoneNumberT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:layout_weight="1"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailT" />
+
+    <EditText
+        android:id="@+id/PhoneNumberE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Enter Your Phone Number"
+        android:inputType="phone"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+
+        android:textColorHint="#CDEA2F00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailE" />
+
+    <TextView
+        android:id="@+id/GenderT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberT" />
+
+    <TextView
+        android:id="@+id/NewPassT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="New Password"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/OldPassT" />
+
+    <EditText
+        android:id="@+id/NewPassE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+        android:textColorHint="#CDEA2F00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/NewPassT"
+        app:layout_constraintTop_toBottomOf="@+id/OldPassE" />
+
+    <TextView
+        android:id="@+id/conNewPassword"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="Confirm Password"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NewPassT" />
+
+    <EditText
+        android:id="@+id/confirmPassword"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Confirm Your Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+        android:textColorHint="#CDEA2F00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/conNewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/NewPassE" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#DD2C00"
+        android:text="Update My Data"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#EA7F13"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="50px"
+        app:icon="@drawable/update_icon"
+        app:iconGravity="textStart"
+        app:iconPadding="15dp"
+        app:iconSize="40dp"
+        app:iconTint="#FFFFFF"
+        app:iconTintMode="src_atop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/conNewPassword"
+        app:strokeColor="#5A1515" />
+
+    <TextView
+        android:id="@+id/emailE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+        android:textColorHint="#CDEA2F00"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameE" />
+
+    <TextView
+        android:id="@+id/GenderE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+        android:textColorHint="#CDEA2F00"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/GenderT"
+        app:layout_constraintTop_toBottomOf="@+id/PhoneNumberE" />
+
+    <TextView
+        android:id="@+id/OldPassT"
+        android:layout_width="150dp"
+        android:layout_height="51dp"
+        android:text="Old Password"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.007"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenderT" />
+
+    <EditText
+        android:id="@+id/OldPassE"
+        android:layout_width="259dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:ems="10"
+        android:hint="Enter Old Password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="#DC2C00"
+        android:textColorHint="#CDEA2F00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GenderE" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
